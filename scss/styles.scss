@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Anton";
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    background-position: cover;
+}
+
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+span {
+    font-family: "Anton";
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+header {
+    background-image: url(../assets/bg-1.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .logo {
+        display: flex;
+        padding: 100px 100px;
+
+        img {
+            height: 35px;
+            width: 35px;
+
+        }
+
+        h1 {
+            margin-left: 10px;
+            font-size: 25px;
+            letter-spacing: 2px;
+            line-height: 35px;
+
+        }
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 150px;
+
+        h1 {
+
+            font-style: italic;
+            font-size: 150px;
+            letter-spacing: 10px;
+
+            span {
+                color: #F9EF23;
+            }
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background-color: #F9EF23;
+            width: 236px;
+            height: 67px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 50;
+            transition: 1.2s;
+            margin-top: 80px;
+
+            &:hover {
+                background-color: #fff762;
+            }
+
+        }
+    }
+}
+
+#page1 {
+    .fit {
+        display: flex;
+        justify-content: space-between;
+
+        &-txt {
+            padding: 150px 200px;
+            display: flex;
+
+
+            flex-direction: column;
+
+            h1 {
+                letter-spacing: 5px;
+                font-style: italic;
+                font-size: 68px;
+                color: #F9EF23;
+            }
+
+            p {
+                letter-spacing: .5px;
+                font-weight: 400;
+                font-size: 24px;
+            }
+
+            a {
+                text-decoration: underline;
+                font-size: 18px;
+                letter-spacing: .5px;
+                margin-top: 30px;
+                font-weight: 500;
+            }
+
+        }
+
+        &-family {
+            display: flex;
+
+            padding: 150px 250px;
+
+            img {
+                display: flex;
+
+
+                &:first-child {
+                    position: relative;
+                    right: 40px;
+                    bottom: 50px;
+
+
+                }
+
+                &:last-child {
+                    position: relative;
+                    top: 90px;
+
+                }
+            }
+        }
+    }
+}
+
+#page2 {
+    .offer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &-txt {
+            text-align: center;
+
+            h1 {
+                letter-spacing: 5px;
+                font-style: italic;
+                font-size: 68px;
+                color: #F9EF23;
+            }
+
+            p {
+                letter-spacing: .5px;
+                font-weight: 400;
+                font-size: 24px;
+            }
+
+        }
+
+        &-check {
+            display: flex;
+            margin: 35px;
+
+            .offerone {
+                margin-right: 35px;
+
+                h2 {
+                    cursor: pointer;
+                    position: relative;
+                    text-align: center;
+                    bottom: 260px;
+                    transition: transform 0.5s ease;
+
+                    &:hover {
+                        transform: scale(1.6);
+                    }
+
+                }
+            }
+
+            .offertwo {
+                h2 {
+                    cursor: pointer;
+                    position: relative;
+                    text-align: center;
+                    bottom: 260px;
+                    transition: transform 0.5s ease;
+
+                    &:hover {
+                        transform: scale(1.6);
+                    }
+
+                }
+            }
+
+            .offertree {
+                margin-left: 35px;
+
+                h2 {
+                    cursor: pointer;
+                    bottom: 260px;
+                    position: relative;
+                    text-align: center;
+                    transition: transform 0.5s ease;
+
+                    &:hover {
+                        transform: scale(1.6);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+#page3 {
+    .reports {
+        &-txt {
+            text-align: center;
+
+            h1 {
+                letter-spacing: 5px;
+                font-style: italic;
+                font-size: 68px;
+                color: #F9EF23;
+            }
+        }
+
+        &-peop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 25px;
+
+            .card {
+                background-color: #F9EF23;
+                margin: 25px;
+                height: 434px;
+                width: 378px;
+
+                p {
+                    font-weight: 200;
+                    font-size: 19px;
+                    padding: 20px 50px;
+                    color: #141414;
+                }
+
+                img {
+                    background-color: #141414;
+                    width: 379px;
+
+                }
+
+                h4 {
+                    margin-left: 48px;
+                    color: #141414;
+                    font-style: italic;
+                    font-weight: 200;
+                }
+            }
+
+
+        }
+    }
+}
+
+#page4 {
+    background-image: url(../assets/bg-2.png);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .falsefooter {
+        h1 {
+            padding: 80px;
+            letter-spacing: 5px;
+            font-style: italic;
+            font-size: 68px;
+            color: #F9EF23;
+        }
+    }
+}
+
+footer {
+    background-color: #F9EF23;
+    height: 25vh;
+
+    .txt {
+
+        &-base {
+
+            ul {
+
+                justify-content: center;
+                display: flex;
+                justify-content: space-around;
+
+
+                li {
+                    margin-top: 80px;
+                    font-size: 30px;
+                    color: #141414;
+
+                    span {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 18px;
+                        color: #141414;
+                    }
+                }
+            }
+        }
+
+    }
+}
